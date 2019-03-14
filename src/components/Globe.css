@@ -1,0 +1,10 @@
+#globe {
+    position: absolute;
+
+    width: 80vw;
+
+    bottom: -60vw;
+
+    border-radius: 1100px;
+}
+

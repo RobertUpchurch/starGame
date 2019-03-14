@@ -1,0 +1,6 @@
+.scoreboard {
+    padding: 20px;
+    color: White;
+    z-index: 1000;
+    display: inline;
+}

@@ -1,0 +1,28 @@
+.Star {
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.StarWhite {
+    background-color: white;
+}
+
+.StarBlue {
+    background-color:#003b59;
+}
+
+.StarPurple {
+    background-color: #682860;
+}
+
+.StarYellow {
+    background-color: yellow;
+}
+
+.starArea {
+    position: absolute;
+    padding: 25px ;
+    background-color: transparent;
+}
