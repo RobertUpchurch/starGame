@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 var timing = true
 
 const addPointReducer = (count = 0, action) => {
-    if (action.type === "ADD_POINT") {
+    if (action.type === "ADD_POINT" && timing) {
         return count + 1
     }
     return count;
@@ -18,9 +18,9 @@ const stopTimerReducer = (count=0, action) => {
     return timing
 }
 
-const stopWatchReducer = (time=0, action) => {
-    if (action.type === "ADD_SECOND") {
-        return time + 1
+const stopWatchReducer = (time=60, action) => {
+    if (action.type === "ADD_SECOND" && time > 0) {
+        return time - 1
     }
 
     return time;
@@ -28,6 +28,6 @@ const stopWatchReducer = (time=0, action) => {
 
 export default combineReducers({
     points: addPointReducer,
-    timing: stopTimerReducer,
+    scoring: stopTimerReducer,
     time: stopWatchReducer
 })

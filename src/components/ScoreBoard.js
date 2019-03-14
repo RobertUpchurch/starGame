@@ -7,14 +7,14 @@ import './ScoreBoard.css'
 
 const ScoreBoard = (props) => {
 
-    if (props.points > 1000) {
+    if (props.time <= 0) {
         props.stopTimer()
     }
 
     return (
         <div className="scoreboard">
             <h1>Score: {props.points} | Time: <StopWatch /></h1>
-            <p>See how fast you can collect 1000 stars</p>
+            <p>How many stars can you collect in 1 minute?</p>
         </div>
     )
 }
@@ -23,7 +23,7 @@ const mapStateToProps = (state) => {
     console.log(state)
     return { 
         points: state.points,
-        timing: state.timing
+        time: state.time
     }
 }
 

@@ -13,7 +13,7 @@ class StopWatch extends React.Component{
     }
 
     checkIfTiming() {
-        if(this.props.timing) {
+        if(this.props.scoring) {
             this.props.addSecond()
         }
     }
@@ -26,7 +26,7 @@ class StopWatch extends React.Component{
 }
 
 const mapStateToProps = (state) => {
-    return { timing : state.timing, time : state.time }
+    return { scoring : state.scoring, time : state.time }
 }
 
 export default connect(mapStateToProps, { addSecond })(StopWatch)
