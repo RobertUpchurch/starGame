@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "ed406e152ff7949a235d",
+    "revision": "f0248660063ea03c77d1",
     "url": "/starGame/static/css/main.990a6211.chunk.css"
   },
   {
-    "revision": "ed406e152ff7949a235d",
-    "url": "/starGame/static/js/main.ed406e15.chunk.js"
+    "revision": "f0248660063ea03c77d1",
+    "url": "/starGame/static/js/main.f0248660.chunk.js"
   },
   {
     "revision": "df7d51fd2ddfc392e57e",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/starGame/static/media/earth1.2b0b2c63.png"
   },
   {
-    "revision": "a5444f893a88c3fe54aa9cfb5dfaafe5",
+    "revision": "34bb98c428e510fcecb995e08ca87c3e",
     "url": "/starGame/index.html"
   }
 ];
