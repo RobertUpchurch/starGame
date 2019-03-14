@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { stopTimer } from '../actions'
+import StopWatch from './StopWatch'
 
 import './ScoreBoard.css'
 
@@ -12,7 +13,7 @@ const ScoreBoard = (props) => {
 
     return (
         <div className="scoreboard">
-            <h1>Score: {props.points} | Time: {props.timing}</h1>
+            <h1>Score: {props.points} | Time: <StopWatch /></h1>
             <p>See how fast you can collect 1000 stars</p>
         </div>
     )

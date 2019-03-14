@@ -9,3 +9,9 @@ export const stopTimer = () => {
         type: "STOP_TIMER"
     }
 }
+
+export const addSecond = () => {
+    return {
+        type: "ADD_SECOND"
+    }
+}
